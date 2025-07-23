@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * Controller:사용자의 요청을 받아서 처리 흐름을 제어하고, 알맞은 서비스(Service) 호출 및 응답 반환을 담당
+ */
 @Controller
 public class HelloController {
 
