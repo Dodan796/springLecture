@@ -3,6 +3,7 @@ package hello.hello_spring.service;
 
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +13,8 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    // SpringConfig에 Bean이 등록X시, @Autowired는 실행되지 않는다.
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
