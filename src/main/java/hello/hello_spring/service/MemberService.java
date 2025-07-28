@@ -1,6 +1,7 @@
 package hello.hello_spring.service;
 
 
+import hello.hello_spring.controller.MemberForm;
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,5 +52,9 @@ public class MemberService {
     public Optional<Member> findOne(Long memberId) {
         return memberRepository.findById(memberId);
     }
+
+
+
+
 
 }
