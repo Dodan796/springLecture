@@ -11,6 +11,7 @@ public class MemoryMemberRepository implements MemberRepository {
     private static long sequence = 0L;
 
 
+    // DB에 data가 추가될때마다 1씩 번호를 증가
     @Override
     public Member save(Member member) {
         member.setId(++sequence);
